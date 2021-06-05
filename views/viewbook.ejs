@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/home.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="topnav">
+        <a href="/home">Home </a>
+        <a href="/viewrequest"> View requests</a>
+      </div>
+      <h1>PADH LI?</h1>
+      <div class="container">
+        
+        <% for (var i =0; i < list.length;  i++ ) { %>
+          <div class="one">
+            <div class="box">
+         <p class="text"> <%= list[i].name %> </p>
+        </div>
+        <div class="whitebox">
+          <%= list[i].genre%>
+        </div>
+        <a href="/checkin?id=<%= list[i].id %> " class="button">Check In</a>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

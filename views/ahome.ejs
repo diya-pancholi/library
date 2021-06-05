@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/ahome.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="topnav">
+        <a href="/addbooklink">Add Books</a>
+      </div>
+      <h1>Approve karlo K</h1>
+      <div class="container">
+        <% list.forEach((book)=>{ %>
+        <div class="one">
+
+          <div class="box">
+            <p class="text"><%= book.name %></p>
+          </div>
+          <div class="whitebox">
+            <p class="describe">iskoleni hai<br /></p>
+          </div>
+          <a href="/approve?id=<%= book.id %> " class="button">Approve</a>
+          <a href="/disapprove?id=<%= book.id %> " class="button2">Decline</a>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>

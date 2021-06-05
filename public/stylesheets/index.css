@@ -1,0 +1,49 @@
+body {
+    background-color: #202020;
+  }
+  h1 {
+    color: #f8de7e;
+    font-size: 15rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .login {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .student {
+    display: flex;
+    flex-direction: column;
+    color: #e26351;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #redlog,
+  #bluelog {
+    height: 15rem;
+    width: 15rem;
+  }
+  .admin {
+    display: flex;
+    flex-direction: column;
+    color: #5194e2;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #slogan {
+    font-size: 2rem;
+    font-family: "Calligraffitti";
+    color: #f8de7e;
+  }
+  

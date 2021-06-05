@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/home.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="topnav">
+        <a href="/seecheckout">Your Books </a>
+        <a href="/viewrequest"> View requests</a>
+      </div>
+      <h1>KAHA TIME BARBAAD KARNA CHAHOGE?</h1>
+      <div class="container">
+        <% list.forEach((book)=>{ %>
+          <!-- <% if(book.availability!="no"){ %>  -->
+        <div class="one">
+          <div class="box">
+            <p class="text"><%= book.name %></p>
+          </div>
+          <div class="whitebox">
+            <p class="describe"><%= book.genre %><br /></p>
+          </div>
+          <!-- <button class="button" action="/checkout" type="button">Check Out</button> -->
+          <a href="/checkout?id=<%= book.id %> " class="button">Check Out</a>
+        </div>
+        <!-- <% }; %>  -->
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>

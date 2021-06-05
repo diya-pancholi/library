@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+fieldset {background-color: #57525296;
+        width: min-content;
+        margin-top: 5%;}
+legend { background-color: black;
+        text-align: center;
+        font-size: 32px;
+        color: orangered ;
+        text-shadow: white;
+        font-family: fantasy;
+        }
+        .topnav {
+  overflow: hidden;
+  background-color: #000000c8;
+}
+.topnav a {
+  float: left;
+  color: orangered;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: orangered;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: purple;
+  color: orangered;}
+   
+        body {background-attachment: fixed;
+        background-image: url('celeb.jpg');
+        background-size: 100%;}
+
+input {font-size: 24px;}
+label {font-size: 24px;
+        color: white;
+        font-family: fantasy;}
+
+            body {background-image: url('../images/bglogin.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: black;}
+            .button {
+  border: none;
+  color: #00FF00;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: comic sans-serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: black;
+          font-family: fantasy;}
+
+.para { background-color: #00008096;
+    width: 15%;}
+
+
+        </style>
+    </head>
+    <body>
+   
+       <div align="center" class="divs" >
+       <form action="/auth" method="POST" name ="form2">
+           <fieldset>
+               <legend><b> Avo padhaaro...</b></legend>
+           <label for="username">Email:</label><br>
+           <input align="center" type="text" id="username" name="email"> <br><br>
+           <label for="pswd">Password:</label><br>
+            <input align="center" type="password" id="pswd" name="pswd" minlength="1" maxlength="8" > <br><br>
+            <label for="lol">Who is the Great Eternal Supreme?</label><br>
+            <input align="center" type="text" id="lol" value="Diya Pancholi, duh" disabled><br><br>
+           <input type="submit" value="Login">
+        </fieldset>
+       </form><br><br>
+       
+    </body>
+</html>
